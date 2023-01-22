@@ -21,7 +21,13 @@ export class ContentList {
 
     toString(index: number): string{
         let content: IContent = this._items[index];
-        let htmlContent = `<h2>${content.name} #${content.id}</h2>
+        let zero = ""
+        if (content.id < 10){
+             zero = "00";
+        }else if (content.id < 100){
+             zero = "0";
+        }
+        let htmlContent = `<h2>${content.name} #${zero}${content.id}</h2>
         <figure>
             <img src="${content.imgSrc}" alt="${content.name}">
             <figcaption>${content.description}</figcaption>
