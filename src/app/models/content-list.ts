@@ -21,10 +21,10 @@ export class ContentList {
 
     toString(index: number): string{
         let content: IContent = this._items[index];
-        let htmlContent = `<h2>{{content.name}} #{{content.id}}</h2>
+        let htmlContent = `<h2>${content.name} #${content.id}</h2>
         <figure>
-            <img src='{{content.imgsrc}}' alt='{{content.name}}>
-            <figcaption>{{content.description}}</figcaption>
+            <img src="${content.imgSrc}" alt="${content.name}">
+            <figcaption>${content.description}</figcaption>
         </figure>`;
         return htmlContent;
     }
