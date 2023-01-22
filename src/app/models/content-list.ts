@@ -3,7 +3,7 @@ import { IContent } from "./icontent";
 export class ContentList {
     private _items: IContent[];
     
-    constructor(){
+    public constructor(){
         this._items = [];
     }
 
@@ -15,7 +15,17 @@ export class ContentList {
         this._items.push(content);
     }
 
-    listLength(){
+    listLength(): number{
         return this._items.length;
+    }
+
+    toString(index: number): string{
+        let content: IContent = this._items[index];
+        let htmlContent = `<h2>{{content.name}} #{{content.id}}</h2>
+        <figure>
+            <img src='{{content.imgsrc}}' alt='{{content.name}}>
+            <figcaption>{{content.description}}</figcaption>
+        </figure>`;
+        return htmlContent;
     }
 }
