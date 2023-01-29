@@ -49,6 +49,10 @@ article figcaption ul li{
     padding: 0.5rem;
 }
 
+article figcaption ul li:last-of-type{
+    width: 100%;
+}
+
 
 .tags{
     display: flex;

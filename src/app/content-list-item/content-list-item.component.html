@@ -7,6 +7,7 @@
             <ul>
                 <li>Type(s): {{contentItem.type}}</li>
                 <li>Author: {{contentItem.author}}</li>
+                <li *ngIf="contentItem.description">{{contentItem.description}}</li>
             </ul>
         </figcaption>
     </figure>
