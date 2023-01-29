@@ -8,6 +8,13 @@
    border-radius: 1rem;
 }
 
+:host.odd{
+    background-color: #686868;
+}
+:host.even{
+    background-color: #505050;
+}
+
 h2{
     text-align: center;
     font-size: 2rem;

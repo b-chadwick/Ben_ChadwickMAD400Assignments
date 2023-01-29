@@ -1,13 +1,7 @@
 <app-content-list-item
-[contentItem]="contentArray[0]">
+*ngFor="let content of contentArray; odd as isOdd; even as isEven"
+[contentItem]="content"
+[ngClass]="{ 'odd': isOdd, 'even': isEven}">
 </app-content-list-item>
-<app-content-list-item
-[contentItem]="contentArray[1]">
-</app-content-list-item>
-<app-content-list-item
-[contentItem]="contentArray[2]">
-</app-content-list-item>
-<app-content-list-item
-[contentItem]="contentArray[3]">
-</app-content-list-item>
+
 
