@@ -1,45 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     width: 100%;
-    background-color: grey;
+    background-color: lightgray;
   }
-  app-root section{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: space-around;
-    margin: 0, auto;
-  }
-  app-root section article{
-    width: 30%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    background-color: lightgrey;
-    margin: 1%;
-    border-radius: 20px;
-  }
-  app-root section article h2{
-    width: 100%;
-    font-size: 180%;
-    text-align: center;
-    font-family: sans-serif;
-  }
-  app-root section article figure{
-    display: flex;
-  }
-  
-  app-root section article img{
-    width: 50%;
-    background-color: whitesmoke;
-    padding: 5%;
-    border-radius: 10%;
-  }
-  app-root section article figcaption{
-    width: 50%;
-    padding: 10%;
-    font-family: sans-serif;
-    font-size: 110%;
-    font-weight:bold;
-    line-height: 120%;
-  }
+
 
