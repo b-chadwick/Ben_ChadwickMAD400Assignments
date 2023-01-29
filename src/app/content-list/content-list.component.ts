@@ -16,7 +16,8 @@ export class ContentListComponent {
       description: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
       author: "Ben",
       imgSrc: "assets/imgs/001Bulbasaur.png", 
-      type: "Grass/Poison"
+      type: "Grass/Poison",
+      tags: ["Grass", "Poison", "Kanto", "Starter"]
     },
     {
       id: 4,
@@ -24,7 +25,8 @@ export class ContentListComponent {
       description: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
       author: "Ben",
       imgSrc: "assets/imgs/004Charmander.png", 
-      type: "Fire"
+      type: "Fire",
+      tags: ["Fire", "Kanto", "Starter"]
     },
     {
       id: 7,
@@ -32,7 +34,8 @@ export class ContentListComponent {
       description: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
       author: "Ben",
       imgSrc: "assets/imgs/007Squirtle.png", 
-      type: "Water"
+      type: "Water",
+      tags: ["Water", "Kanto", "Starter"]
     },
     {
       id: 25,

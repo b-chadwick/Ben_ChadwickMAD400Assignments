@@ -1,1 +1,18 @@
-<p *ngIf="contentItem">{{contentItem.name}}</p>
+<article *ngIf="contentItem">
+    <h2>{{contentItem.name}}</h2>
+    <figure *ngIf="contentItem.imgSrc">
+        <img src="{{contentItem.imgSrc}}"
+        alt="{{contentItem.name}}">
+        <figcaption>
+            <ul>
+                <li>Type(s): {{contentItem.type}}</li>
+                <li>Author: {{contentItem.author}}</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <ul *ngIf="contentItem.tags" class="tags">
+        <li *ngFor="let tag of contentItem.tags">
+            {{tag}}
+        </li>
+    </ul>
+</article>
