@@ -7,10 +7,10 @@ import { IContent } from '../models/icontent';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent {
-  private _contentArray: IContent[];
+   contentArray: IContent[];
 
    constructor(){
-    this._contentArray = [{
+    this.contentArray = [{
       id: 1,
       name: "Bulbasaur",
       description: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
