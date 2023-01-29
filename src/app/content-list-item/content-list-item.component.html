@@ -2,7 +2,7 @@
     <h2>{{contentItem.name}}</h2>
     <figure *ngIf="contentItem.imgSrc">
         <img src="{{contentItem.imgSrc}}"
-        alt="{{contentItem.name}}">
+        alt="{{contentItem.name}}" (click)="displayDetails()">
         <figcaption>
             <ul>
                 <li>Type(s): {{contentItem.type}}</li>
