@@ -14,9 +14,10 @@ export class PokemonService {
     return of(CONTENT);
   }
 
-  getItem(id: number):IContent|undefined{
-     const content = CONTENT.find(element => element.id === id)
-     return content;
+  getItem(id: number):Observable<IContent>|undefined{
+    let index = CONTENT.findIndex(element => element.id === id);
+    let content:IContent = CONTENT[index];
+    return of(content);
   }
 
   insertItem(content: IContent): Observable<IContent[]>{
@@ -30,10 +31,10 @@ export class PokemonService {
     return of(CONTENT);
   }
 
-  deleteItem(id: number): IContent|undefined{
+  deleteItem(id: number): Observable<IContent>|undefined{
     let index = CONTENT.findIndex(element => element.id === id);
     let content:IContent = CONTENT[index];
     CONTENT.splice(index, 1);
-    return content;
+    return of(content);
   }
 }
