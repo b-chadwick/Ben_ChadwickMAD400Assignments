@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IContent } from '../models/icontent';
+import { PokemonService } from '../services/pokemon.service';
 
 @Component({
   selector: 'app-content-list',
@@ -9,7 +10,11 @@ import { IContent } from '../models/icontent';
 export class ContentListComponent {
    contentArray: IContent[];
 
-   constructor(){
+   constructor(private pokemonService: PokemonService){
     this.contentArray = [];
+  }
+
+  ngOnInit(){
+    this.pokemonService.getContent().subscribe(content => this.contentArray = content);
   }
 }
