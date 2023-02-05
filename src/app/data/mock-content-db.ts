@@ -1,4 +1,6 @@
-export const CONTENT = [{
+import { IContent } from "../models/icontent";
+
+export const CONTENT: IContent[]= [{
     id: 1,
     name: "Bulbasaur",
     description: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
