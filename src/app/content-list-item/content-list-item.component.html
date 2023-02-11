@@ -1,15 +1,8 @@
 <article *ngIf="contentItem">
-    <h2>{{contentItem.name}}</h2>
+    <h2><a [routerLink]="['/content', contentItem.id+'']">{{contentItem.name}}</a></h2>
     <figure *ngIf="contentItem.imgSrc">
         <img src="{{contentItem.imgSrc}}"
         alt="{{contentItem.name}}" (click)="displayDetails()">
-        <figcaption>
-            <ul>
-                <li>Type(s): {{contentItem.type}}</li>
-                <li>Author: {{contentItem.author}}</li>
-                <li *ngIf="contentItem.description">{{contentItem.description}}</li>
-            </ul>
-        </figcaption>
     </figure>
     <ul *ngIf="contentItem.tags" class="tags">
         <li *ngFor="let tag of contentItem.tags">

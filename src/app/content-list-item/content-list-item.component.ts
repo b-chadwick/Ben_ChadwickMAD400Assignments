@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IContent } from '../models/icontent';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-content-list-item',
