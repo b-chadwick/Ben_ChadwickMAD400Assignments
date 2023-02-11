@@ -17,4 +17,9 @@ export class ContentSearchComponent {
   ngOnInit(){
     this.pokemonService.getItem(4)?.subscribe(content=> this.contentItem = content);
   }
+
+  updateItem(id: string){
+    var pokemonId: number = +id;
+    this.pokemonService.getItem(pokemonId)?.subscribe(content=> this.contentItem = content);
+  }
 }
