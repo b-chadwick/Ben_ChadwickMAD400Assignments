@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { ContentSearchComponent } from './content-search/content-search.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
   path: "content/:id",
   component: ItemDetailsComponent
+  },
+  {
+    path: "search",
+    component: ContentSearchComponent
   }
 ];
 

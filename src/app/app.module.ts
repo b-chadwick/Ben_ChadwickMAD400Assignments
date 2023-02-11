@@ -6,13 +6,15 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { ContentListItemComponent } from './content-list-item/content-list-item.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContentSearchComponent } from './content-search/content-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentListComponent,
     ContentListItemComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    ContentSearchComponent
   ],
   imports: [
     BrowserModule,
