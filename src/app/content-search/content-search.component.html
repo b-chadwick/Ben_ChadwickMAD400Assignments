@@ -1,0 +1,5 @@
+<input type="text" name="id" #id>
+<input type="submit" value="Search" (click)="updateItem(id.value)">
+<app-content-list-item
+[contentItem] = "contentItem"
+style="box-shadow: 30px 10px rgba(0,0,0,0.5);"></app-content-list-item>

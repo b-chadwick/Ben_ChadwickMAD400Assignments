@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { CONTENT } from '../data/mock-content-db';
+import { CONTENT, INVALIDPOKMEON } from '../data/mock-content-db';
 import { IContent } from '../models/icontent';
 
 @Injectable({
@@ -14,9 +14,12 @@ export class PokemonService {
     return of(CONTENT);
   }
 
-  getItem(id: number):Observable<IContent>|undefined{
+  getItem(id: number):Observable<IContent>{
     let index = CONTENT.findIndex(element => element.id === id);
     let content:IContent = CONTENT[index];
+    if(!content){
+      return of(INVALIDPOKMEON);
+    }
     return of(content);
   }
 

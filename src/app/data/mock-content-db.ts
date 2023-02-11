@@ -35,3 +35,11 @@ export const CONTENT: IContent[]= [{
     imgSrc: "assets/imgs/025Pikachu.png", 
     type: "Electric"
   }];
+
+  export const INVALIDPOKMEON: IContent = {
+    id: -1,
+    name: "Invalid Id",
+    author: "",
+    type: "error",
+    imgSrc: "assets/imgs/error.png"
+  }

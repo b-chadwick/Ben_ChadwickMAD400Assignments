@@ -10,9 +10,5 @@ import { PokemonService } from './services/pokemon.service';
 })
 export class AppComponent {
   title = 'B_Chadwick_Pokemon';
-  contentItem: IContent | undefined;
-  constructor(private pokemonService: PokemonService){
-    pokemonService.getItem(4)?.subscribe(content=> this.contentItem = content);
-  }
-  
+
 }
