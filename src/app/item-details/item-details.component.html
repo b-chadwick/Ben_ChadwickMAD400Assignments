@@ -1,1 +1,15 @@
-<p>item-details works!</p>
+<article *ngIf="contentItem">
+    <h1>{{contentItem.name}}</h1>
+    <figure *ngIf="contentItem.imgSrc">
+        <img src="{{contentItem.imgSrc}}"
+        alt="{{contentItem.name}}">
+        <figcaption *ngIf="contentItem.description">{{contentItem.description}}</figcaption>
+    </figure>
+    <ul *ngIf="contentItem.tags" class="tags">
+        <li *ngFor="let tag of contentItem.tags">
+            {{tag}}
+        </li>
+    </ul>
+    <p>Author: {{contentItem.author}}</p>
+    <a [routerLink]="['/']">Home</a>
+</article>
