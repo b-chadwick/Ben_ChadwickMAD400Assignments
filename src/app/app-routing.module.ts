@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { ContentSearchComponent } from './content-search/content-search.component';
+import { ContentNotFoundComponent } from './content-not-found/content-not-found.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: "search",
     component: ContentSearchComponent
+  },
+  {
+    path: "**",
+    component: ContentNotFoundComponent
   }
 ];
 
